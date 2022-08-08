@@ -1,6 +1,3 @@
-# # link for this code
-# # https://youtu.be/NCCYWIzN6hU
-
 from tkinter import *
 import tkinter as tk
 from geopy.geocoders import Nominatim
@@ -58,10 +55,6 @@ def getWeather():
     p.config(text=(pressure,"hpa"))
     w.config(text=(wind,"m/s"))
     d.config(text=description)
-
-
-
-    
 
 
     '''first cell'''
@@ -168,12 +161,7 @@ def getWeather():
 
     day7temp.config(text=f"Day:{tempday7}\n Night:{tempnight7}")
 
-
-
-
     # days
-
-
 
     first=datetime.now()
     day1.config(text=first.strftime("%A"))
@@ -387,7 +375,6 @@ seventhimage.place(x=7,y=20)
 
 day7temp=Label(seventhframe,bg="#282829",fg="#fff")
 day7temp.place(x=2,y=70)
-
 
 root.mainloop()
 
